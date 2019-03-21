@@ -22,9 +22,11 @@ type NumberLiteralResultType = 0 | 1 | 2;
 interface Pending {
   kind: 'pending';
 }
+
 interface Completed {
   kind: 'completed';
 }
+
 interface Failed {
   kind: 'failed';
 }
