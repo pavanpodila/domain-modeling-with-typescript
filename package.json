@@ -1,0 +1,8 @@
+{
+  "name": "domain-modeling-with-typescript",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "^16.8.8"
+  }
+}

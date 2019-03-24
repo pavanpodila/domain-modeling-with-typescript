@@ -35,14 +35,14 @@ interface Props {
   width: number;
 }
 
-class Props {
+class Props1 {
   color: string;
   width: number;
 }
 
-type Props = {
+type Props2 = {
   color: string;
   width: number;
 };
 
-const props: { color: string; width: number };
+const props: { color: string; width: number } = { color: 'black', width: 1 };
