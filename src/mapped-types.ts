@@ -33,6 +33,9 @@ type Check = {
 type OnlyBool = Check['skip' | 'flag'];
 type CheckWithoutNever = Check[keyof Check];
 
+// From an object literal
+type TrackType = typeof names['track-1'];
+
 /// Complex Mapped Types
 type OnlySomeProps = Pick<Shape, 'color' | 'width'>;
 type NotRequiredProps = Partial<Shape>;
@@ -40,6 +43,10 @@ type NotRequiredProps = Partial<Shape>;
 type NumberedShapeProps = {
   [K in keyof Shape]: Shape[K] extends number ? K : never
 }[keyof Shape];
+
+type NumberProps = { [K in NumberedShapeProps]: Shape[K] };
+
+// Genericize NumberedShapeProps!!
 
 /// Examples of Mapping ///
 interface Todo {

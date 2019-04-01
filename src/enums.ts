@@ -32,3 +32,7 @@ interface Failed {
 }
 
 type UnionResultType = Pending | Completed | Failed;
+
+function changeStatus(status: StringLiteralResultType) {
+  /* ... */
+}
